@@ -1,0 +1,103 @@
+{
+  "compilerOptions": {
+    "rootDir": ".",
+    "sourceMap": true,
+    "declaration": false,
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "target": "es2015",
+    "module": "esnext",
+    "lib": [
+      "es2020",
+      "dom"
+    ],
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true,
+    "baseUrl": ".",
+    "jsx": "react-jsx",
+    "allowJs": false,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "types": [
+      "vite/client",
+      "vitest",
+      "puppeteer",
+      "expect-puppeteer"
+    ],
+    "resolveJsonModule": true,
+    "paths": {
+      "@api/*": [
+        "./src/libs/api/*"
+      ],
+      "@asset/*": [
+        "./src/assets/*"
+      ],
+      "@atom/*": [
+        "./src/libs/atom/*"
+      ],
+      "@component/*": [
+        "./src/libs/components/*"
+      ],
+      "@element/*": [
+        "./src/libs/elements/*"
+      ],
+      "@enum/*": [
+        "./src/libs/enums/*"
+      ],
+      "@form/*": [
+        "./src/libs/components/forms/*"
+      ],
+      "@hook/*": [
+        "./src/libs/hooks/*"
+      ],
+      "@interface/*": [
+        "./src/libs/interfaces/*"
+      ],
+      "@page/*": [
+        "./src/pages/*"
+      ],
+      "@route/*": [
+        "./src/routes/*"
+      ],
+      "@store/*": [
+        "src/store/*"
+      ],
+      "@style/*": [
+        "src/libs/styles/*"
+      ],
+      "@util/*": [
+        "./src/libs/utils/*"
+      ]
+    }
+  },
+  "files": [],
+  "include": [
+    "src/svg.d.ts"
+  ],
+  "references": [
+    {
+      "path": "./tsconfig.app.json"
+    },
+    {
+      "path": "./tsconfig.spec.json"
+    },
+    {
+      "path": "./tsconfig.storybook.json"
+    }
+  ],
+  "compileOnSave": false,
+  "exclude": [
+    "node_modules",
+    "tmp",
+    ".storybook",
+    "dist"
+  ],
+  "ts-node": {
+    "compilerOptions": {
+      "module": "commonjs"
+    }
+  }
+}
